@@ -1,0 +1,17 @@
+//imports
+@import "settings";
+
+.c-logo {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: $fw-bold;
+    color: $color-dark;
+    
+    &__svg {
+        max-width: 3.75rem;
+    }
+
+    &__poly {
+        color: $color-accent;
+    }
+}

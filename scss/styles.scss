@@ -1,10 +1,2 @@
-@import "settings", "generic", "elements";
+@import "settings", "generic", "elements", "components.logo", "components.nav";
 
-.test1 {
-    background-color: hotpink;
-    padding: 40px;
-}
-
-.test2 {
-    background-color: cyan;
-}
