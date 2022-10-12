@@ -22972,3 +22972,50 @@ body {
   font-size: 1rem;
   background-color: #e6e6e6;
 }
+
+.c-logo {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+}
+
+.c-logo__svg {
+  max-width: 3.75rem;
+}
+
+.c-logo__poly {
+  color: #69c6ba;
+}
+
+.c-nav {
+  background-color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: fixed;
+}
+
+.c-nav__list {
+  list-style-type: none;
+}
+
+.c-nav__item {
+  float: left;
+}
+
+.c-nav__link {
+  color: black;
+  text-align: center;
+  padding-left: 2.5rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.c-nav__link--active {
+  padding-left: 0rem;
+  color: #69c6ba;
+}
+
+.c-nav__link:hover {
+  color: #69c6ba;
+}

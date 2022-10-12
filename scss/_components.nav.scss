@@ -1,0 +1,35 @@
+//imports
+@import "settings";
+
+.c-nav {
+    background-color: $color-light;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: fixed;
+
+    &__list {
+        list-style-type: none;
+        
+    }
+
+    &__item {
+        float: left;
+    }
+
+    &__link {
+        color: $color-dark;
+        text-align: center;
+        padding-left: 2.5rem;
+        text-decoration: none;
+        font-weight: $fw-bold;
+
+        &--active {
+            padding-left: 0rem;
+            color: $color-accent;
+        }
+
+        &:hover {
+            color: $color-accent;
+        }
+    }
+}
