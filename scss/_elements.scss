@@ -12,3 +12,25 @@ body {
     font-size: 1rem;
     background-color: $color-base--light;
 }
+
+header {
+    background-image: url("../img/banner.jpg");
+    background-color: rgba(0,0,0,0.7);
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 45rem;
+    color: $color-light;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

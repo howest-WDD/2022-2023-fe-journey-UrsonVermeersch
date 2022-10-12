@@ -1,0 +1,17 @@
+//imports
+@import "settings";
+
+.c-btn {
+    text-transform: uppercase;
+    background-color:$color-accent;
+    color: $color-light;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-weight: $fw-regular;
+
+    &:hover {
+        color: $color-highlight;
+        transition-timing-function: ease-in;
+        transition: 0.2s;
+    }
+}
