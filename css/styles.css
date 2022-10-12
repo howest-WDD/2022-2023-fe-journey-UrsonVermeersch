@@ -22972,3 +22972,12 @@ body {
   font-size: 1rem;
   background-color: #e6e6e6;
 }
+
+.test1 {
+  background-color: hotpink;
+  padding: 40px;
+}
+
+.test2 {
+  background-color: cyan;
+}

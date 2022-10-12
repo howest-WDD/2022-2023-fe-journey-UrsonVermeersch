@@ -1,1 +1,10 @@
-@import "../scss/settings", "../scss/generic", "../scss/elements";
+@import "settings", "generic", "elements";
+
+.test1 {
+    background-color: hotpink;
+    padding: 40px;
+}
+
+.test2 {
+    background-color: cyan;
+}
