@@ -1,17 +1,32 @@
-//imports
-@import "settings";
-
 .c-btn {
     text-transform: uppercase;
-    background-color:$color-accent;
+    background-color: $color-accent;
     color: $color-light;
-    padding: 0.5rem 1rem;
+    padding: .5rem 1.5rem;
+    transition: all 0.2s ease;
     display: inline-block;
+    margin-bottom: 1rem;
     font-weight: $fw-regular;
 
     &:hover {
-        color: $color-highlight;
-        transition-timing-function: ease-in;
-        transition: 0.2s;
+        background-color: $color-highlight;
+        color: $color-light;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &--down {
+        border-radius: 50%;
+        padding: 0;
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.5rem;
+    
+        &:hover {
+            transform: translateY(.5rem);
+        }
     }
 }

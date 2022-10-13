@@ -1,35 +1,40 @@
-//imports
-@import "settings";
-
 .c-nav {
-    background-color: $color-light;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    background: $color-light;
+    padding: 2rem 0;
     position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
 
     &__list {
-        list-style-type: none;
-        
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        margin-bottom: 0;
     }
 
     &__item {
-        float: left;
+        margin-left: 2.5rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
     }
 
     &__link {
         color: $color-dark;
-        text-align: center;
-        padding-left: 2.5rem;
-        text-decoration: none;
         font-weight: $fw-bold;
 
-        &--active {
-            padding-left: 0rem;
-            color: $color-accent;
-        }
-
+        &--active,
         &:hover {
             color: $color-accent;
         }
+    }
+
+    &--active {
+        box-shadow: 0 1px 5px rgba($color-dark, 0.25);
+        padding: .5rem 0;
     }
 }

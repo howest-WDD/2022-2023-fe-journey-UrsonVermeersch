@@ -1,4 +1,3 @@
-// Colors
 $color-dark: black;
 $color-light: white;
 $color-base--light: #e6e6e6;
@@ -7,12 +6,10 @@ $color-accent: #69c6ba;
 $color-highlight: #c66995;
 $color-warning: #f44336;
 
-// Font-weights
-$fw-light: 300; 
+$fw-light: 300;
 $fw-regular: 400;
 $fw-medium: 600;
 $fw-bold: 700;
 
-//bootstrap
-$bootstrap-icons-font-src: url("../dist/fonts/bootstrapicons.woff2?a97b3594ad416896e15824f6787370e0") format("woff2"),
+$bootstrap-icons-font-src: url("../dist/fonts/bootstrap-icons.woff2?a97b3594ad416896e15824f6787370e0") format("woff2"),
 url("../dist/fonts/bootstrap-icons.woff?a97b3594ad416896e15824f6787370e0") format("woff");
