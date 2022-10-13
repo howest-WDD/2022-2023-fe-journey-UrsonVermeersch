@@ -1,49 +1,74 @@
-<html lang="nl">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Document title -->
-    <title>Frontent - Journey</title>
-
-    <!-- Other CSS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend - Journey</title>
     <link rel="stylesheet" href="dist/styles.css">
-
-    <!-- Favicon  -->
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    
+    <script src="js/scripts.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
+
 <body>
-  <div class="container">
-    <nav class="c-nav">
-          <div class="row">
-            <div class="col col-lg-9 col-xl-4 c-logo">
-              <a href="#top">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.62 52.08" class="c-logo__svg">
-                      <polygon fill="none" points="37.02,9.29 19.41,38.62 8.13,38.66 31.33,0 " class="c-logo__poly"/>
-                      <polygon fill="none" points="33.7,22.69 51.33,52.05 62.62,52.08 39.42,13.42 " class="c-logo__poly"/>
-                      <polygon fill="none" points="40.09,42.44 5.85,42.41 0,52.06 45.91,52.08 " class="c-logo__poly"/>
-                  </svg>
-              </a>Journey
-          </div>
-            <div class="col col-lg-3 col-xl-8 test2">
-              <ul class="c-nav__list">
-                  <li class="c-nav__item"><a href="#home" class="c-nav__link c-nav__link--active">Home</a></li>
-                  <li class="c-nav__item"><a href="#destinations" class="c-nav__link">Top Destinations</a></li>
-                  <li class="c-nav__item"><a href="#places" class="c-nav__link">Recommended Places</a></li>
-                  <li class="c-nav__item"><a href="#contact" class="c-nav__link">Contact Us</a></li>
-              </ul>
+    <nav class="js-nav c-nav">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-9 col-lg-4">
+                    <a class="c-logo" href="#top">
+                        <svg class="c-logo__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.62 52.08">
+                            <polygon class="c-logo__polygon c-logo__polygon--left" fill="none" points="37.02,9.29 19.41,38.62 8.13,38.66 31.33,0 " />
+                            <polygon class="c-logo__polygon c-logo__polygon--right" fill="none" points="33.7,22.69 51.33,52.05 62.62,52.08 39.42,13.42 " />
+                            <polygon class="c-logo__polygon c-logo__polygon--bottom" fill="none" points="40.09,42.44 5.85,42.41 0,52.06 45.91,52.08 " />
+                        </svg>
+                        Journey
+                    </a>
+                </div>
+                <div class="col-3 col-lg-8">
+                    <ul class="c-nav__list">
+                        <li class="c-nav__item">
+                            <a class="c-nav__link c-nav__link--active" href="#home">Home</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a class="c-nav__link" href="#destinations">Top Destinations</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a class="c-nav__link" href="#places">Recommended Places</a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a class="c-nav__link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
+        </div>
     </nav>
-  </div>
-    
     <header>
-      <h1>Let's begin</h1>
-      <h2>We assist you to choose the best.</h2>
-      <a href="#destinations" class="c-btn"><i class="bi bi-caret-down-fill"></i></a>
+        <h1>Let's begin</h1>
+        <h2>We assist you to choose the best.</h2>
+        <a href="#destinations" class="c-btn c-btn--down"><i class="bi bi-caret-down-fill"></i></a>
     </header>
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 col-xxl-6 offset-xxl-3 my-5 text-center">
+                        <h2 class="text-uppercase mb-2">
+                            Your <strong>Journey</strong> is our priority
+                        </h2>
+                        <p class="mb-4">
+                            Nullam auctor, sapien sit amet lacinia euismod, lorem magna lobortis massa, in tincidunt mi
+                            metus quis lectus. Duis nec lobortis velit. Vivamus id magna vulputate, tempor ante eget,
+                            tempus augue. Maecenas ultricies neque magna.
+                        </p>
+                        <a href="#" class="c-btn">Continue explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
+
 </html>
