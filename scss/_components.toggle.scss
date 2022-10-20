@@ -1,0 +1,42 @@
+.c-toggle {
+    cursor: pointer;
+
+    &__switch {
+        width: 2.5rem;
+        height: 1.5rem;
+        border-radius: 1rem;
+        background-color: $color-base--light;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: .3rem;
+        position: relative;
+        transition: all .3s;
+
+        &::after{
+            content: "";
+            background-color: $color-light;
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            top: .25rem;
+            left: .25rem;
+            border-radius: 50%;
+            transition: all .3s;
+        }
+    }
+
+    &__checkbox {
+        display: none;
+
+
+        //als het aangevinkt is
+        &:checked + .c-toggle__switch {
+            background-color: $color-accent;
+
+            &::after {
+                margin-left: 1rem;
+            }
+
+        } 
+    }
+}
