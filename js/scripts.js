@@ -13,8 +13,19 @@ const navScroll = function() {
     });
 };
 
+const toggleDarkmode = function () {
+    const body = document.body;
+    body.classList.toggle("o-darkmode");
+}
+
+const listenToggle = function () {
+    const toggle = document.querySelector(".js-toggle");
+    toggle.addEventListener('change', toggleDarkmode);
+}
+
 const init = function() {
     navScroll();
+    listenToggle();
 };
 
 document.addEventListener("DOMContentLoaded", init);
