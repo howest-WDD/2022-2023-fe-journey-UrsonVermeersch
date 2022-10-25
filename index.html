@@ -574,6 +574,59 @@
             </section>
         </div>
 
+        <section class="c-contact" id="#contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7 col-md-10 col-sm-12  bg-primary ">
+                        <h2 class="text-uppercase text-center">Contact us</h2>
+                        <h5 class="mb-4 text-center">Get info about our destinations.</h5>
+                        <form action="#" class="js-validate">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingName" minlength="2" placeholder="Name" required>
+                                <label for="floatingName">Name</label>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Please provide a name.</div>
+                            </div>
+                            <div class="form-floating mb-3 c-contact__age">
+                                <input type="number" class="form-control" id="floatingAge" min="18" max="100" placeholder="Age" required>
+                                <label for="floatingAge">Age</label>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Please provide your age (+18).</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Email Adress" required>
+                                <label for="floatingInput">Email address</label>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Please provide a correct email address.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="floatingPhonenumber" pattern="^\d{9,10}$" placeholder="Phonenumber" required>
+                                <label for="floatingPhonenumber">Phonenumber</label>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">Please provide a correct phonenumber.</div>
+                            </div>
+                            <div class="form-floating mb-3 c-contact__question">
+                                <textarea class="form-control" id="floatingTextarea" style="height: 7.5rem" placeholder="How can we help you further?"></textarea>
+                                <label for="floatingTextarea">How can we help you further?</label>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class=" form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="floatingCheck" required>
+                                <label class="form-check-label" for="floatingCheck">
+                                  I have read the terms of agreement.
+                                  <span class="c-contact__optional">(optional)</span>
+                                </label>
+                                <div class="valid-feedback">Looks good!</div>
+                                <div class="invalid-feedback">You must agree before submitting.</div>
+                            </div>
+                            <button class="c-btn js-submit" style="width:100%">Get your info</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div class="container">
