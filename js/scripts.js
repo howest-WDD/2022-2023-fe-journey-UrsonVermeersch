@@ -23,9 +23,14 @@ const listenToggle = function () {
     toggle.addEventListener('change', toggleDarkmode);
 }
 
+const validateForm = function () {
+    
+}
+
 const init = function() {
     navScroll();
     listenToggle();
+    validateForm();
 };
 
 document.addEventListener("DOMContentLoaded", init);

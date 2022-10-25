@@ -1,0 +1,15 @@
+.c-contact {
+    padding: 4rem;
+    
+    h2, h5, .c-contact__checklabel {
+        color: $color-dark;
+    }
+
+    &__age {
+        max-width: 6rem;
+    }
+
+    &__optional {
+        font-size: 0.75rem;
+    }
+}
