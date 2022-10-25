@@ -47,7 +47,7 @@
         font-weight: $fw-bold;
 
         @include media-breakpoint-down(lg){
-            color: $color-light;
+            color: $color-white;
         }
 
         &--active,

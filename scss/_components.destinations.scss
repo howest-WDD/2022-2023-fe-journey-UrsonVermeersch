@@ -26,12 +26,12 @@
         justify-content: center;
 
         @include media-breakpoint-down(sm) {
-            background-color: rgba($color: black, $alpha: 0.3);
+            background-color: rgba($color-dark-rgb, 0.3);
             height: 4.5rem;
             align-items: center;
             padding: 1rem;
-            color: white;
-            text-shadow: 1px 1px 4px rgba($color: black, $alpha: 0.5);
+            color: $color-white;
+            text-shadow: 1px 1px 4px rgba($color-dark-rgb, 0.5);
         }
     }
 
@@ -45,7 +45,7 @@
     &__price {
         background-color: $color-accent;
         text-decoration: none;
-        color: white;
+        color: $color-white;
         min-width: 12rem;
         align-items: center;
         justify-content: center;
@@ -61,7 +61,7 @@
 
         &:hover {
             background-color: $color-highlight;
-            color: white;
+            color: $color-white;
         }
 
     }

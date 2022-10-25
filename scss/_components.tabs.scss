@@ -7,7 +7,7 @@
 
     &__link {
         text-decoration: none;
-        color: white;
+        color: $color-white;
         font-weight: $fw-regular;
         padding: 2rem 1.5rem;
         text-transform: uppercase;
@@ -21,7 +21,7 @@
         }
         &:hover {
             background-color: $color-highlight;
-            color: white;
+            color: $color-white;
         }
 
         img {
