@@ -1,0 +1,48 @@
+$percentages: (95:0.2s,90:0.4s,85:0.6s,80:0.8s,70:1s,65:1.2s);
+
+.c-categories {
+    background-color: $color-light;
+    padding: 6rem 0;
+    margin-top: 4rem;
+
+    &__bar {
+        background-color: rgba($color: $color-accent-rgb, $alpha: .2);
+        height: 0.4rem;
+        margin: 1.5rem auto;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: $color-accent;
+            width: 0;
+            height: 0.4rem;
+        }
+    }
+
+    &__percentage {
+        font-weight: $fw-bold;
+        font-size: 2rem;
+    }
+
+    &__text {
+        margin-bottom: 8rem;
+
+        h3 {
+            text-transform: uppercase;
+        }
+
+        h4 {
+            color: #c66995;
+        }
+    }
+}
+
+@each $percentage, $delay in $percentages {
+    .c-categories__animate {
+        .c-categories__bar--#{$percentage}::after {
+            width: ($percentage * 1%);
+            transition: width .3s $delay;
+        }
+    }
+}

@@ -1,34 +1,41 @@
 .c-places {
-    background-color: white;
-
-
+    background-color: $color-white;
     &__item {
-        position: relative;
+        @include media-breakpoint-down(md) {
+            position: relative;
+        }
+    }
+
+    &__description, &__descriptionsecond {
+        @include media-breakpoint-down(lg) {
+            margin-left: 0rem;
+            margin-right: 0rem;
+        }
     }
 
     &__description {
         background-color: $color-accent;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        margin-left: -5rem;
 
-        p {
-            color: $color-white;
-        }
-
-        @include media-breakpoint-down(md){
-            background-color: rgba($color-accent-rgb, 0.8);
+        @include media-breakpoint-down(md) {
+            background-color: rgba($color: $color-accent, $alpha: 0.8); // ?
             position: absolute;
-            bottom: -1rem;
+            bottom: 0;
             left: 0;
         }
+    }
 
+    &__descriptionsecond {
+        background-color: $color-highlight;
+        margin-left: 0;
+        margin-right: -5rem;
+        z-index: 2; // ?
 
-        &--second {
-            background-color: $color-highlight;
-
-            @include media-breakpoint-down(md){
-                background-color: rgba($color-highlight-rgb, 0.8);
-            }
+        @include media-breakpoint-down(md) {
+            background-color: rgba($color: $color-highlight, $alpha: 0.8); // ?
+            position: absolute;
+            bottom: 0;
+            left: 0;
         }
     }
 
